@@ -187,12 +187,12 @@ rebuild_firmware() {
     my_packages="\
         acpid attr base-files bash bc blkid block-mount blockd bsdtar btrfs-progs busybox bzip2 \
         cgi-io chattr comgt comgt-ncm coremark coreutils coreutils-base64 coreutils-nohup \
-        coreutils-truncate curl dosfstools dumpe2fs e2freefrag e2fsprogs \
-        exfat-mkfs f2fs-tools f2fsck fdisk gawk getopt git gzip hostapd-common iconv iw iwinfo jq \
+        coreutils-sort coreutils-truncate curl dosfstools dumpe2fs e2freefrag e2fsprogs \
+        exfat-mkfs f2fs-tools f2fsck fdisk gawk getopt git grep gzip hostapd-common iconv iw iwinfo jq \
         jshn kmod-brcmfmac kmod-brcmutil kmod-cfg80211 kmod-mac80211 libjson-script liblucihttp \
         liblucihttp-lua losetup lsattr lsblk lscpu mkf2fs mount-utils openssl-util parted \
         perl-http-date perlbase-file perlbase-getopt perlbase-time perlbase-unicode perlbase-utf8 \
-        pigz ppp ppp-mod-pppoe proto-bonding pv rename resize2fs tar tune2fs \
+        pigz ppp ppp-mod-pppoe proto-bonding pv rename resize2fs sed tar tune2fs \
         uclient-fetch uhttpd uhttpd-mod-ubus unzip uqmi usb-modeswitch uuidgen wget-ssl whereis \
         which wpad-basic wwan xfs-fsck xfs-mkfs xz xz-utils ziptool zoneinfo-asia zoneinfo-core zstd \
         \
@@ -202,6 +202,16 @@ rebuild_firmware() {
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         \
         luci-app-amlogic \
+        \
+        ca-bundle default-settings-chn dnsmasq-full dropbear firewall4 fstools ipv6helper \
+        kmod-nf-nathelper kmod-nf-nathelper-extra kmod-nft-offload libc libgcc libustream-openssl logd \
+        luci-app-opkg mtd netifd nftables opkg procd procd-seccomp procd-ujail uci urandom-seed urngd \
+        kmod-amazon-ena kmod-e1000e kmod-vmxnet3 kmod-rtc-rx8025 kmod-i2c-mux-pca954x kmod-gpio-pca953x \
+        partx-utils kmod-wdt-sp805 kmod-mvneta kmod-mvpp2 kmod-fsl-dpaa1-net kmod-fsl-dpaa2-net \
+        kmod-fsl-enetc-net kmod-dwmac-imx kmod-fsl-fec kmod-thunderx-net kmod-dwmac-rockchip \
+        kmod-dwmac-sun8i kmod-phy-aquantia kmod-phy-broadcom kmod-phy-marvell kmod-phy-marvell-10g \
+        kmod-sfp kmod-atlantic kmod-bcmgenet kmod-octeontx2-net kmod-renesas-net-avb kmod-phy-realtek \
+        kmod-phy-smsc \
         \
         ${config_list} \
         "
