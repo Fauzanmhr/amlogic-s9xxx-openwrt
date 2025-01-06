@@ -8,6 +8,7 @@
 **Note:** If you'd like to try this setup, please use the **"build-openwrt-with-imagebuilder"** option in the **Actions Tab**. This is the only part I've modified; everything else remains default as provided by Ophub, as I am not familiar with further customizations.
 
 **Before running the workflow, please follow the settings shown in this image:**  
-![image](https://github.com/user-attachments/assets/13d5eec5-9b37-41e0-b01c-cddb7fbe99e3)
+![image](https://github.com/user-attachments/assets/8f34bbf8-398d-44d2-8ac5-8af5209c9f8f)
+
 
 
