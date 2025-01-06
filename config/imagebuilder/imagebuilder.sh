@@ -203,7 +203,7 @@ rebuild_firmware() {
         \
         luci-app-amlogic \
         \
-        ca-bundle default-settings-chn dnsmasq-full dropbear firewall4 fstools ipv6helper \
+        ca-bundle dnsmasq-full dropbear firewall4 fstools ipv6helper \
         kmod-nf-nathelper kmod-nf-nathelper-extra kmod-nft-offload libc libgcc libustream-openssl logd \
         luci-app-opkg mtd netifd nftables opkg procd procd-seccomp procd-ujail uci urandom-seed urngd \
         kmod-amazon-ena kmod-e1000e kmod-vmxnet3 kmod-rtc-rx8025 kmod-i2c-mux-pca954x kmod-gpio-pca953x \
