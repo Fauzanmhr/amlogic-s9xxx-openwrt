@@ -185,29 +185,22 @@ rebuild_firmware() {
 
     # Selecting default packages, lib, theme, app and i18n, etc.
     my_packages="\
-        acpid attr base-files bash bc blkid block-mount blockd bsdtar btrfs-progs busybox bzip2 \
+        acpid attr bash bc blockd bsdtar btrfs-progs bzip2 \
         cgi-io chattr comgt comgt-ncm coremark coreutils coreutils-base64 coreutils-nohup \
-        coreutils-sort coreutils-truncate curl dosfstools dumpe2fs e2freefrag e2fsprogs \
+        coreutils-sort coreutils-truncate curl dosfstools dumpe2fs e2freefrag \
         exfat-mkfs f2fs-tools f2fsck fdisk gawk getopt git grep gzip hostapd-common iconv iw iwinfo jq \
         jshn kmod-brcmfmac kmod-brcmutil kmod-cfg80211 kmod-mac80211 libjson-script liblucihttp \
-        liblucihttp-lua losetup lsattr lsblk lscpu mkf2fs mount-utils openssl-util parted \
+        liblucihttp-lua losetup lsattr lsblk lscpu mount-utils openssl-util parted \
         perl-http-date perlbase-file perlbase-getopt perlbase-time perlbase-unicode perlbase-utf8 \
-        pigz ppp ppp-mod-pppoe proto-bonding pv rename resize2fs sed tar tune2fs \
-        uclient-fetch uhttpd uhttpd-mod-ubus unzip uqmi usb-modeswitch uuidgen wget-ssl whereis \
+        pigz proto-bonding pv rename resize2fs sed tar tune2fs \
+        uhttpd uhttpd-mod-ubus unzip uqmi usb-modeswitch uuidgen wget-ssl whereis \
         which wpad-basic wwan xfs-fsck xfs-mkfs xz xz-utils ziptool zoneinfo-asia zoneinfo-core zstd \
         \
-        luci luci-base luci-compat luci-lib-base \
-        luci-lib-ip luci-lib-ipkg luci-lib-jsonc luci-lib-nixio luci-mod-admin-full luci-mod-network \
+        luci-base luci-lib-ip luci-lib-jsonc luci-lib-nixio luci-mod-admin-full luci-mod-network \
         luci-mod-status luci-mod-system luci-proto-3g luci-proto-bonding luci-proto-ipip luci-proto-ipv6 \
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         \
         luci-app-amlogic \
-        \
-        ca-bundle dnsmasq-full dropbear firewall4 fstools ipv6helper \
-        kmod-nf-nathelper kmod-nf-nathelper-extra kmod-nft-offload libc libgcc libustream-openssl logd \
-        luci-app-opkg mtd netifd nftables opkg procd procd-seccomp procd-ujail uci urandom-seed urngd \
-        kmod-dwmac-sun8i kmod-phy-aquantia kmod-phy-broadcom kmod-phy-marvell kmod-phy-marvell-10g \
-        kmod-sfp kmod-phy-realtek kmod-phy-smsc \
         \
         ${config_list} \
         "
